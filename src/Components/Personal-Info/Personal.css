@@ -1,0 +1,88 @@
+.persoanl__container {
+	margin-top: 5rem;
+}
+.personal__title h1 {
+	font-size: 2.7rem;
+	color: hsl(213, 96%, 18%);
+	font-weight: 550;
+	margin-bottom: 1rem;
+}
+.personal__title h3 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: hsl(215, 10%, 45%);
+	margin-bottom: 2rem;
+}
+.personal__form h4 {
+	color: hsl(213, 96%, 18%);
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: 1.5rem;
+	margin-bottom: 0.6rem;
+}
+.personal__form input {
+	padding: 1.1rem;
+	width: 530px;
+	border-radius: 7px;
+	border: 1px solid #ccc;
+	transition: border 0.2s ease-in-out;
+}
+.personal__form input:focus {
+	border: 1.3px solid hsl(243, 100%, 62%);
+	outline: hsl(243, 100%, 62%);
+	cursor: pointer;
+}
+.personal__btn {
+	text-align: center;
+	font-weight: 300;
+	display: block;
+	padding: 0.8rem;
+	border-radius: 7px;
+	border: 1px solid #ccc;
+	background-color: hsl(213, 89%, 26%);
+	color: white;
+	width: 7rem;
+	margin-top: 3.5rem;
+	margin-left: 28rem;
+	cursor: pointer;
+}
+/* Mobile size at 375px */
+@media screen and (max-width: 375px) {
+	.persoanl__container {
+		margin-top: 0;
+		padding: 1rem;
+	}
+	.personal {
+		height: 33rem;
+		border-radius: 0.8rem;
+		width: 360px;
+		z-index: 1;
+		background-color: white;
+	}
+	.personal__form input {
+		padding: 1rem;
+		width: 300px;
+		border-radius: 7px;
+		border: 1px solid #ccc;
+		transition: border 0.2s ease-in-out;
+	}
+
+	.personal__btn {
+		align-items: left;
+		font-weight: 300;
+		padding: 0.8rem;
+		border-radius: 7px;
+		border: 1px solid #ccc;
+		background-color: hsl(213, 89%, 26%);
+		color: white;
+		margin-top: 8rem;
+		margin-left: 13rem;
+		cursor: pointer;
+	}
+	.personal__title h1 {
+		font-size: 2rem;
+		color: hsl(213, 96%, 18%);
+		font-weight: 550;
+		margin-bottom: 1rem;
+	}
+}

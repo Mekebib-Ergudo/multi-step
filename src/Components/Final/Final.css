@@ -1,0 +1,39 @@
+.final {
+	margin-top: 12rem;
+	width: 33rem;
+}
+.final__img {
+	text-align: center;
+}
+.final__img img {
+	width: 6rem;
+	margin-bottom: 1.7rem;
+}
+.final__img h1 {
+	font-size: 2.5rem;
+	color: hsl(213, 96%, 18%);
+	margin-bottom: 1rem;
+}
+.final h3 {
+	line-height: 1.6rem;
+	font-size: 1.2rem;
+	color: #aba9a9;
+	font-weight: 400;
+	text-align: center;
+}
+@media screen and (max-width: 375px) {
+	.finalM {
+		width: 360px;
+		background-color: white;
+		border-radius: 8px;
+	}
+	.final {
+		margin-top: 0rem;
+		width: 18rem;
+		padding: 1rem;
+	}
+	.final__img img {
+		width: 5rem;
+		margin-bottom: 1.3rem;
+	}
+}

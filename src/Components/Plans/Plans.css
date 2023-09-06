@@ -1,0 +1,196 @@
+.plans__container {
+	margin-top: 5rem;
+}
+.plans__title h1 {
+	font-size: 2.7rem;
+	color: hsl(213, 96%, 18%);
+	font-weight: 520;
+	margin-bottom: 0.8rem;
+}
+
+.plans__title h3 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: hsl(215, 10%, 45%);
+	margin-bottom: 2rem;
+}
+.plans__options {
+	display: flex;
+	justify-content: space-between;
+}
+.plans__option {
+	padding-right: 4.5rem;
+	padding-top: 1.2rem;
+	padding-left: 1.3rem;
+	padding-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	transition: border-color 0.3s ease-in-out;
+}
+.plans__option:hover {
+	border-color: hsl(243, 100%, 62%);
+}
+.middle {
+	padding-right: 3.5rem;
+	margin-left: 1.3rem;
+	margin-right: 1.3rem;
+}
+.plans__option img {
+	margin-bottom: 4rem;
+	width: 3.2rem;
+}
+.plans__option h3 {
+	font-size: 1.3rem;
+	color: hsl(213, 96%, 18%);
+	font-weight: 600;
+}
+.plans__option p {
+	font-size: 1.1rem;
+	color: #ccc;
+	font-weight: 500;
+}
+.plans__select {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	padding: 1rem;
+	background-color: hsl(240, 14%, 96%);
+	border-radius: 0.8rem;
+	border: transparent;
+	margin-top: 1.5rem;
+	color: hsl(213, 96%, 18%);
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 24px;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	background-color: hsl(213, 96%, 18%);
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 17px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: hsl(213, 96%, 18%);
+}
+
+input:checked + .slider:before {
+	transform: translateX(35px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.plans__btn {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3.5rem;
+	cursor: pointer;
+}
+.plans__btn h3 {
+	color: #ccc;
+	font-weight: 700;
+	transition: color 0.2s ease-in-out;
+}
+.plans__btn h3:hover {
+	color: hsl(213, 96%, 18%);
+}
+.btn {
+	text-align: center;
+	padding: 1rem;
+	width: 9rem;
+	font-size: 1.1rem;
+	border-radius: 8px;
+	background-color: hsl(213, 96%, 18%);
+	color: rgb(234, 232, 232);
+	border: #ccc;
+	font-weight: 300;
+}
+@media screen and (max-width: 375px) {
+	.plans {
+		width: 360px;
+	}
+	.plans__container {
+		margin-top: 0;
+		height: 37rem;
+		border-radius: 0.8rem;
+
+		z-index: 1;
+		background-color: white;
+		padding: 1rem;
+	}
+	.plans__options {
+		display: block;
+	}
+
+	.plans__option {
+		display: flex;
+		gap: 2rem;
+		padding-right: 0;
+		padding-top: 1rem;
+		padding-left: 0;
+		padding-bottom: 1rem;
+	}
+	.plans__option img {
+		padding-left: 1rem;
+		margin-bottom: 0rem;
+		width: 3rem;
+	}
+	.plans__select {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
+		padding: 1rem;
+	}
+
+	.middle {
+		padding-right: 0rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.plans__title h1 {
+		font-size: 2rem;
+	}
+
+	.btn {
+		text-align: center;
+		padding: 0.8rem;
+		width: 7rem;
+		font-size: 1rem;
+		font-weight: 200;
+	}
+}
